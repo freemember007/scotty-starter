@@ -29,4 +29,4 @@ data Post = Post
 instance ToJSON Post
 
 post :: ScottyM()
-post = get "/post" $ json $ Post 1 "Yello world"
+post = get "/post" $ json $ [ Post 3 "Yello world", Post 2 "a" ]
